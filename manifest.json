@@ -1,0 +1,22 @@
+{
+    "name": "OnlyFlans",
+    "description":"There is only flan",
+    "version":"1.0",
+    "manifest_version":3,
+    "action":{
+        "default_icon":{
+            "48":"rsz_1rsz_icon.jpg"
+        },
+        "icons":{
+            "16":"rsz_1rsz_icon.jpg",
+            "48":"rsz_1rsz_icon.jpg",
+            "128": "rsz_1rsz_icon.jpg"
+        }
+    },
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js":["./src/main.js"]
+        }
+    ]
+}
